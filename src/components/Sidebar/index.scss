@@ -1,5 +1,6 @@
+@import '../../styles/colors.scss';
 .nav-bar {
-  background: #181818;
+  background: $color-dark;
   width: 80px;
   height: 100%;
   position: absolute;
@@ -33,7 +34,7 @@
 
     a {
       font-size: 22px;
-      color: #4d4d4e;
+      color: $color-darkgray;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -45,7 +46,7 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: $primary-color;
 
         svg {
           opacity: 0;
@@ -97,7 +98,33 @@
 
     a.active {
       svg {
-        color: #ffd700;
+        color: $primary-color;
+      }
+    }
+  }
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 20px;
+        line-height: 16px;
+        color: #4d4d4e;
+      }
+
+      &:hover {
+        .anchor-icon {
+          color: $primary-color;
+        }
       }
     }
   }
