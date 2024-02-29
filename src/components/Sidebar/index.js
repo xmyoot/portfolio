@@ -8,9 +8,9 @@ import {
   faHome,
   faUser,
   faEnvelope,
-  faLinkedin,
-  faGithub,
 } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
   return (
@@ -43,12 +43,12 @@ const Sidebar = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/hectorjimenezz/"
             target="_blank"
             rel="noreferrer"
           >
             <FontAwesomeIcon
-              icon={faLinkedin}
+              icon={faLinkedinIn}
               color="#4d4d4e"
               className="anchor-icon"
             />
@@ -56,7 +56,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/xmyoot"
             target="_blank"
             rel="noreferrer"
           >
