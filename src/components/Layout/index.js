@@ -6,10 +6,12 @@ const Layout = () => {
     <>
       <Sidebar />
       <div className="page">
-        <span className="tags top-tags top-tag-html">&lt;html&gt;</span>
-        <br />
-        <span className="tags top-tags">&lt;body&gt;</span>
-        {/* <Home /> */}
+        <span className="tags top-tags">
+          <span className="top-tag-html">&lt;html&gt;</span>
+          <br />
+          <span className="top-tag-body">&lt;body&gt;</span>
+        </span>
+        <Home />
         <span className="tags bottom-tags">
           &lt;/body&gt;
           <br />
