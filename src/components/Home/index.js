@@ -9,14 +9,14 @@ const Home = () => {
         <h1>
           Hi, <br /> I'm
           <img src={logo} alt="developer" />
-          Hector
+          ector
           <br />
           web developer
-          <h2>Frontend Developer / Javscript Expert / Youtuber </h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
         </h1>
+        <h2>Frontend Developer / React Expert</h2>
+        <Link to="/contact" className="flat-button">
+          CONTACT ME
+        </Link>
       </div>
     </div>
   )
