@@ -11,7 +11,7 @@ const Home = () => {
           <img src={logo} alt="developer" />
           ector
           <br />
-          web developer
+          Software developer
         </h1>
         <h2>Frontend Developer / React Expert</h2>
         <Link to="/contact" className="flat-button">
