@@ -1,6 +1,7 @@
 @import '../../styles/colors.scss';
 @import '../../styles/breakpoints.scss';
 .home-page {
+  display: flex;
   .text-zone {
     position: absolute;
     left: 15%;
