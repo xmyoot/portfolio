@@ -1,12 +1,14 @@
 @import '../../styles/colors.scss';
 .portfolio-page {
-  padding-left: 100px;
+  padding-left: 120px;
   padding-right: 50px;
   width: calc(100% - 150px);
   position: initial;
   height: 100%;
   overflow: auto;
-
+  @media (max-width: 600px) {
+    flex-direction: row;
+  }
   h1.page-title {
     margin-left: 100px;
     margin-top: 100px;
@@ -18,16 +20,36 @@
     gap: 15px;
     flex-wrap: wrap;
     padding-bottom: 100px;
-    margin-left: 100px;
+    margin-left: 120px;
+    margin-right: 150px;
   }
 
   .image-box {
     position: relative;
-    flex: 1 1 20%;
-    height: 400px;
+    flex-grow: 1;
+    height: 300px;
     overflow: hidden;
     border-radius: 10px;
-    max-width: calc(25% - 10px);
+    flex-basis: 100%; // Take up 100% of the width on small screens
+    max-width: 100%; // Default to 100% width on small screens
+
+    @media (min-width: 600px) {
+      // Adjust the width at 600px viewport width
+      flex-basis: calc(50% - 10px);
+      max-width: calc(50% - 10px);
+    }
+
+    @media (min-width: 900px) {
+      // Adjust the width at 900px viewport width
+      flex-basis: calc(33% - 10px);
+      max-width: calc(33% - 10px);
+    }
+
+    @media (min-width: 1200px) {
+      // Adjust the width at 1200px viewport width
+      flex-basis: calc(25% - 10px);
+      max-width: calc(25% - 10px);
+    }
 
     .portfolio-image {
       position: absolute;

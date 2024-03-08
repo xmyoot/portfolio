@@ -1,6 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
+import esileImg from '../../assets/images/esile.png'
+import plaImg from '../../assets/images/pla.png'
+import gastronguruImg from '../../assets/images/gastronguru.png'
+import happyPawsImg from '../../assets/images/happypaws.png'
+import animeQuoteImg from '../../assets/images/animeQuotes.png'
+import oneCommunityImg from '../../assets/images/oneCommunity.png'
+import portfolioImg from '../../assets/images/portfolio.png'
+import linkedInScraperImg from '../../assets/images/linkedinscraper.png'
+import pokedexImg from '../../assets/images/pokedex.png'
+import jobboardhuntImg from '../../assets/images/jobboardhunt.png'
+import jobboardImg from '../../assets/images/jobboard.png'
 import './index.scss'
 
 const Portfolio = () => {
@@ -28,17 +39,15 @@ const Portfolio = () => {
         </h1>
         <div className="images-container">
           <div className="image-box">
-            <img
-              src="url_to_image_1"
-              className="portfolio-image"
-              alt="portfolio"
-            />
+            <img src={esileImg} className="portfolio-image" alt="portfolio" />
             <div className="content">
-              <p className="title">Project 1</p>
-              <h4 className="description">This is project 1</h4>
+              <p className="title">Esile Marketing</p>
+              <h4 className="description">
+                Marketing Site Front End Developer
+              </h4>
               <button
                 className="btn"
-                onClick={() => window.open('url_to_project_1')}
+                onClick={() => window.open('https://esilemarketing.com/')}
               >
                 View
               </button>
@@ -46,22 +55,190 @@ const Portfolio = () => {
           </div>
           <div className="image-box">
             <img
-              src="url_to_image_2"
+              src={portfolioImg}
               className="portfolio-image"
               alt="portfolio"
             />
             <div className="content">
-              <p className="title">Project 2</p>
-              <h4 className="description">This is project 2</h4>
+              <p className="title">Personal Portfolio</p>
+              <h4 className="description">React Developer</h4>
               <button
                 className="btn"
-                onClick={() => window.open('url_to_project_2')}
+                onClick={() =>
+                  window.open('https://github.com/xmyoot/Portfolio')
+                }
               >
                 View
               </button>
             </div>
           </div>
-          {/* Add more portfolio items here */}
+          <div className="image-box">
+            <img src={plaImg} className="portfolio-image" alt="portfolio" />
+            <div className="content">
+              <p className="title">Personal Living Alert</p>
+              <h4 className="description">Front End Developer</h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open('https://www.personallivingalert.com/')
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div className="image-box">
+            <img
+              src={gastronguruImg}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">Gastron Guru</p>
+              <h4 className="description">React Developer</h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open('https://github.com/xmyoot/Gastron-Guru')
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div className="image-box">
+            <img
+              src={happyPawsImg}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">Happy Paws</p>
+              <h4 className="description">React Native Developer</h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open('https://github.com/xmyoot/happy-paws')
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div className="image-box">
+            <img
+              src={animeQuoteImg}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">Anime Quote Generator</p>
+              <h4 className="description">React Developer</h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open(
+                    'https://github.com/xmyoot/anime-quote-generator/'
+                  )
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div className="image-box">
+            <img src={pokedexImg} className="portfolio-image" alt="portfolio" />
+            <div className="content">
+              <p className="title">Pokemon Application</p>
+              <h4 className="description">React Developer</h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open('https://github.com/xmyoot/pokedex/')
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div className="image-box">
+            <img
+              src={oneCommunityImg}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">One Community Organization</p>
+              <h4 className="description">React Developer</h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open(
+                    'https://github.com/OneCommunityGlobal/HighestGoodNetworkApp/'
+                  )
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div className="image-box">
+            <img
+              src={linkedInScraperImg}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">LinkedIn Web Scrapper</p>
+              <h4 className="description">Javascript Developer</h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open('https://github.com/xmyoot/linkedin-web-scraper')
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div className="image-box">
+            <img
+              src={jobboardhuntImg}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">Job Board Aggregator</p>
+              <h4 className="description">Full Stack Developer</h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open('https://github.com/xmyoot/job-board-hunt')
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div className="image-box">
+            <img
+              src={jobboardImg}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">Job Board Application</p>
+              <h4 className="description">Full Stack Developer</h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open('https://github.com/xmyoot/jobs_final')
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />
