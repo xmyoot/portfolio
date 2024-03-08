@@ -4,7 +4,12 @@ import { NavLink } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import logoSubtitle from '../../assets/images/logoSubtitle.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faBriefcase,
+} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -40,6 +45,14 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} />
         </NavLink>
+        <NavLink
+          exact="true"
+          activeClassName="active"
+          className="portfolio-link"
+          to="/portfolio"
+        >
+          <FontAwesomeIcon icon={faBriefcase} />
+        </NavLink>
       </nav>
       <ul>
         <li>
@@ -48,20 +61,12 @@ const Sidebar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon
-              icon={faLinkedinIn}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
+            <FontAwesomeIcon icon={faLinkedinIn} className="anchor-icon" />
           </a>
         </li>
         <li>
           <a href="https://github.com/xmyoot" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon
-              icon={faGithub}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
+            <FontAwesomeIcon icon={faGithub} className="anchor-icon" />
           </a>
         </li>
       </ul>

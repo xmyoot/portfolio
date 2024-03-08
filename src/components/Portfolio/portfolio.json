@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Project 1",
+    "description": "This is project 1",
+    "image": "../assets/images/avatar.png",
+    "url": "url_to_project_1"
+  },
+  {
+    "name": "Project 2",
+    "description": "This is project 2",
+    "image": "url_to_image_2",
+    "url": "url_to_project_2"
+  }
+]

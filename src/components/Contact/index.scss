@@ -10,6 +10,8 @@
     font-size: 16px;
     color: $color-light;
     font-family: sans-serif;
+    animation: fadeInUp 1s 1s;
+    animation-fill-mode: forwards;
     letter-spacing: 1px; // Space out the text
   }
   ul {
@@ -53,6 +55,8 @@
     color: #fff;
     padding: 10px 20px;
     box-sizing: border-box;
+    animation: fadeInUp 1s 1s;
+    animation-fill-mode: forwards;
     border-radius: 5px; // Add rounded corners
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); // Add subtle box-shadow
     transition: border-color 0.3s ease; // Add transition for smoother focus effect
@@ -73,6 +77,8 @@
     padding: 20px;
     box-sizing: border-box;
     min-height: 100px;
+    animation: fadeInUp 1s 1s;
+    animation-fill-mode: forwards;
     border-radius: 5px; // Add rounded corners
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); // Add subtle box-shadow
     transition: border-color 0.3s ease; // Add transition for smoother focus effect
@@ -95,7 +101,7 @@
     border: 1px solid $primary-color;
     margin-top: 25px;
     float: left;
-    animation: fadeInAnimation 1s 1.8s backwards;
+    animation: fadeInAnimation 2s 1.8s backwards;
     white-space: nowrap;
     transition: all 0.3s ease; // Add transition for smoother hover effect
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); // Add box-shadow for 3D look
