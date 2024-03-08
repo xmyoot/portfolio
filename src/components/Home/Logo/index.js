@@ -1,21 +1,21 @@
 import { useRef } from 'react'
-import gsap from 'gsap-trial'
+// import gsap from 'gsap-trial'
 // import logo from '../../../assets/images/logo.png'
 // import logoOutline from '../../../assets/images/logoOutline4.svg'
 import './index.scss'
-import { useGSAP } from '@gsap/react'
-import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin'
+// import { useGSAP } from '@gsap/react'
+// import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin'
 const Logo = () => {
-  const outlineLogoRef = useRef()
-  useGSAP(
-    () => {
-      gsap.registerPlugin(DrawSVGPlugin)
-      gsap.timeline({ repeat: -1 }).to(outlineLogoRef.current, {
-        duration: 10,
-        drawSVG: 1,
-      })
-    },
-    { scope: outlineLogoRef }
+  // const outlineLogoRef = useRef()
+  // useGSAP(
+  //   () => {
+  //     gsap.registerPlugin(DrawSVGPlugin)
+  //     gsap.timeline({ repeat: -1 }).to(outlineLogoRef.current, {
+  //       duration: 10,
+  //       drawSVG: 1,
+  //     })
+  //   },
+  //   { scope: outlineLogoRef }
   )
   return (
     <div className="logo-container">
@@ -29,7 +29,7 @@ const Logo = () => {
         version="1.0"
       >
         <path
-          ref={outlineLogoRef}
+          // ref={outlineLogoRef}
           stroke-linecap="butt"
           transform="matrix(2.222343, 0, 0, 2.222343, 94.419644, -10.567903)"
           fill="none"
