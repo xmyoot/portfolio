@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+// import { useRef } from 'react'
 // import gsap from 'gsap-trial'
 // import logo from '../../../assets/images/logo.png'
 // import logoOutline from '../../../assets/images/logoOutline4.svg'
@@ -16,7 +16,7 @@ const Logo = () => {
   //     })
   //   },
   //   { scope: outlineLogoRef }
-  )
+  // )
   return (
     <div className="logo-container">
       <svg
