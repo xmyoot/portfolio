@@ -1,6 +1,6 @@
 @import '../../styles/colors.scss';
 .nav-bar {
-  background: $color-dark;
+  background: $color-navbar;
   width: 80px;
   height: 100%;
   position: absolute;
@@ -34,7 +34,7 @@
 
     a {
       font-size: 22px;
-      color: $color-darkgray;
+      color: $color-navbar-links;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -46,7 +46,7 @@
       }
 
       &:hover {
-        color: $primary-color;
+        color: $color-light;
 
         svg {
           opacity: 0;
@@ -98,7 +98,7 @@
 
     a.active {
       svg {
-        color: $primary-color;
+        color: $color-light;
       }
     }
   }
@@ -118,7 +118,7 @@
         display: block;
         font-size: 20px;
         line-height: 16px;
-        color: #4d4d4e;
+        color: $color-navbar-links;
       }
 
       &:hover {

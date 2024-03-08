@@ -4,11 +4,7 @@ import { NavLink } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 import logoSubtitle from '../../assets/images/logoSubtitle.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faHome,
-  faUser,
-  faEnvelope,
-} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -20,8 +16,13 @@ const Sidebar = () => {
         <img className="sub-logo" src={logoSubtitle} alt="logo" />
       </Link>
       <nav>
-        <NavLink exact="true" to="/" activeClassName="active">
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        <NavLink
+          exact="true"
+          to="/"
+          activeClassName="active"
+          className="home-link"
+        >
+          <FontAwesomeIcon icon={faHome} />
         </NavLink>
         <NavLink
           exact="true"
@@ -55,11 +56,7 @@ const Sidebar = () => {
           </a>
         </li>
         <li>
-          <a
-            href="https://github.com/xmyoot"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/xmyoot" target="_blank" rel="noreferrer">
             <FontAwesomeIcon
               icon={faGithub}
               color="#4d4d4e"

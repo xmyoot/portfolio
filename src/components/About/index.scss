@@ -1,3 +1,31 @@
+@import '../../styles/colors.scss';
+.avatarImg {
+  width: 200px;
+  height: 200px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 20%;
+  margin: 0 auto;
+  margin-left: 0px;
+  margin-bottom: 50px;
+  // box-shadow: 0 0 20px 0px lightyellow;
+  animation: avatarAnimation 1s ease-in-out;
+  animation-delay: 1s;
+  filter: grayscale(80%) contrast(125%) brightness(95%);
+}
+@keyframes avatarAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .stage-cube-cont {
   width: 50%;
   height: 100%;

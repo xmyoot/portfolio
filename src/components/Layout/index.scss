@@ -16,7 +16,7 @@
     position: absolute;
     bottom: 0;
     left: 120px;
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'La Belle Aurore', cursive;
   }
 
@@ -48,7 +48,7 @@
     h1 {
       font-size: 53px;
       font-family: 'Coolvetica';
-      color: $primary-color;
+      color: $color-light;
       font-weight: 400;
       margin-top: 0;
       position: relative;
@@ -59,7 +59,7 @@
         content: '<h1>';
         font-family: 'La Belle Aurore', cursive;
         color: $primary-color;
-        font-size: 18px;
+        font-size: 24px;
         position: absolute;
         margin-top: -10px;
         left: -10px;
@@ -71,7 +71,7 @@
         content: '<h1/>';
         font-family: 'La Belle Aurore', cursive;
         color: $primary-color;
-        font-size: 18px;
+        font-size: 24px;
         line-height: 18px;
         position: absolute;
         left: -30px;
@@ -112,7 +112,7 @@
 
     .text-animate-hover {
       &:hover {
-        color: #fff;
+        color: $primary-color;
       }
     }
   }

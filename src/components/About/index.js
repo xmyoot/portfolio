@@ -10,8 +10,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import avatarSrc from '../../assets/images/avatar.png'
+import Loader from 'react-loaders'
+
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
@@ -21,6 +25,8 @@ const About = () => {
     <>
       <div className="container about-page">
         <div className="text-zone">
+          <img className="avatarImg" src={avatarSrc} alt="avatar" />
+          <div className="arrow"></div>
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -30,8 +36,8 @@ const About = () => {
           </h1>
           <p>
             I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            established software company with the opportunity to work with the
+            latest technologies on challenging and diverse projects.
           </p>
           <p>
             I'm quiet confident, naturally curious, and perpetually working on
@@ -61,6 +67,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Loader type="pacman" />
     </>
   )
 }
