@@ -1,0 +1,165 @@
+@import '../../styles/colors.scss';
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+  label {
+    display: block;
+    margin-bottom: 10px; // Increase space between label and input
+    margin-top: 5px;
+    font-weight: 300; // Lighter font-weight for a modern look
+    font-size: 16px;
+    color: $color-light;
+    font-family: sans-serif;
+    letter-spacing: 1px; // Space out the text
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex; // Add this
+    flex-wrap: wrap; // Add this
+
+    li {
+      padding: 0;
+      margin: 0 2% 10px 0; // Combine margin properties
+      list-style: none;
+      opacity: 0;
+      position: relative;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      flex: 1 0 48%; // Add this, equivalent to width: 49% with flexbox
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    li.half {
+      flex: 1 0 48%; // Update this, equivalent to width: 49% with flexbox
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'] {
+    width: 100%;
+    border: 1px solid lighten($color-light, 20%);
+    background: $secondary-color;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 5px; // Add rounded corners
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); // Add subtle box-shadow
+    transition: border-color 0.3s ease; // Add transition for smoother focus effect
+
+    &:focus {
+      border-color: lighten($color-light, 100%);
+      outline: none;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid lighten($color-light, 20%);
+    background: $secondary-color;
+    height: auto; // Let the height adjust based on content
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100px;
+    border-radius: 5px; // Add rounded corners
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); // Add subtle box-shadow
+    transition: border-color 0.3s ease; // Add transition for smoother focus effect
+
+    &:focus {
+      border-color: lighten($color-light, 40%);
+      outline: none;
+    }
+  }
+
+  .flat-button {
+    color: $color-light;
+    background-color: $primary-color;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 1px solid $primary-color;
+    margin-top: 25px;
+    float: left;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+    transition: all 0.3s ease; // Add transition for smoother hover effect
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); // Add box-shadow for 3D look
+
+    &:hover {
+      background-color: transparent;
+      color: $primary-color;
+      transform: translateY(-3px); // Lift the button a bit on hover
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); // Increase box-shadow on hover
+    }
+  }
+}
+
+.map-wrap {
+  background: rgba(8, 253, 216, 0.1);
+  float: right;
+  width: 53%;
+  height: 115%;
+  margin-top: -3%;
+}
+
+.leaflet-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.info-map {
+  position: absolute;
+  background: #000;
+  top: 50px;
+  right: 30%;
+  z-index: 999999;
+  width: 267px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+
+  span {
+    font-size: 16px;
+
+    span {
+      color: #ffd700;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .map-wrap {
+    float: none;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+  }
+
+  .info-map {
+    display: none;
+  }
+}
