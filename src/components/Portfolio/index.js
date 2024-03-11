@@ -69,25 +69,6 @@ const Portfolio = () => {
           </div>
           <div className="image-box">
             <img
-              src={gastronguruImg}
-              className="portfolio-image"
-              alt="portfolio"
-            />
-            <div className="content">
-              <p className="title">Gastron Guru</p>
-              <h4 className="description">React Developer</h4>
-              <button
-                className="btn"
-                onClick={() =>
-                  window.open('https://github.com/xmyoot/Gastron-Guru')
-                }
-              >
-                View
-              </button>
-            </div>
-          </div>
-          <div className="image-box">
-            <img
               src={happyPawsImg}
               className="portfolio-image"
               alt="portfolio"
@@ -194,6 +175,25 @@ const Portfolio = () => {
                 className="btn"
                 onClick={() =>
                   window.open('https://github.com/xmyoot/job-board-hunt')
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
+          <div className="image-box">
+            <img
+              src={gastronguruImg}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">Gastron Guru</p>
+              <h4 className="description">React Developer</h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open('https://github.com/xmyoot/Gastron-Guru')
                 }
               >
                 View
