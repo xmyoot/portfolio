@@ -7,7 +7,6 @@ import gastronguruImg from '../../assets/images/gastronguru.png'
 import happyPawsImg from '../../assets/images/happypaws.png'
 import animeQuoteImg from '../../assets/images/animeQuotes.png'
 import oneCommunityImg from '../../assets/images/oneCommunity.png'
-import portfolioImg from '../../assets/images/portfolio.png'
 import linkedInScraperImg from '../../assets/images/linkedinscraper.png'
 import pokedexImg from '../../assets/images/pokedex.png'
 import jobboardhuntImg from '../../assets/images/jobboardhunt.png'
@@ -48,25 +47,6 @@ const Portfolio = () => {
               <button
                 className="btn"
                 onClick={() => window.open('https://esilemarketing.com/')}
-              >
-                View
-              </button>
-            </div>
-          </div>
-          <div className="image-box">
-            <img
-              src={portfolioImg}
-              className="portfolio-image"
-              alt="portfolio"
-            />
-            <div className="content">
-              <p className="title">Personal Portfolio</p>
-              <h4 className="description">React Developer</h4>
-              <button
-                className="btn"
-                onClick={() =>
-                  window.open('https://github.com/xmyoot/Portfolio')
-                }
               >
                 View
               </button>
