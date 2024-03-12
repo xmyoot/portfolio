@@ -52,23 +52,26 @@ const Contact = () => {
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
-              <label>Name</label>
-              <input type="text" placeholder="Name" name="from_name" required />
-              <label>Email</label>
-              <input
-                type="email"
-                name="to_name"
-                placeholder="example@domain.com"
-                required
-              />
-              <label>Phone Number</label>
+              <div className="contact-name-email">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="from_name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="to_name"
+                  placeholder="Email"
+                  required
+                />
+              </div>
               <input
                 type="tel"
                 name="to_phone"
-                placeholder="123-456-7890"
+                placeholder="Phone Number"
                 required
               />
-              <label>Message</label>
               <textarea name="message" placeholder="Message" required />
               <input type="submit" className="flat-button" value="Send" />
             </form>
