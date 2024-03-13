@@ -10,7 +10,7 @@ import oneCommunityImg from '../../assets/images/oneCommunity.png'
 import linkedInScraperImg from '../../assets/images/linkedinscraper.png'
 import pokedexImg from '../../assets/images/pokedex.png'
 import jobboardhuntImg from '../../assets/images/jobboardhunt.png'
-import jobboardImg from '../../assets/images/jobBoard.png'
+import jobboardImg from '../../assets/images/job-board.png'
 import './index.scss'
 
 const Portfolio = () => {
