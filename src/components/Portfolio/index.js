@@ -11,6 +11,7 @@ import linkedInScraperImg from '../../assets/images/linkedinscraper.png'
 import pokedexImg from '../../assets/images/pokedex.png'
 import jobboardhuntImg from '../../assets/images/jobboardhunt.png'
 import jobboardImg from '../../assets/images/job-board.png'
+import colorPalleteImg from '../../assets/images/color-pallete.png'
 import './index.scss'
 
 const Portfolio = () => {
@@ -37,6 +38,27 @@ const Portfolio = () => {
           />
         </h1>
         <div className="images-container">
+          <div className="image-box">
+            <img
+              src={colorPalleteImg}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">AI Color Pallete Generator</p>
+              <h4 className="description">
+                AI Color Pallete Generator using React and OpenAI API
+              </h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open('https://www.github.com/xmyoot/style-pallete')
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
           <div className="image-box">
             <img src={esileImg} className="portfolio-image" alt="portfolio" />
             <div className="content">
