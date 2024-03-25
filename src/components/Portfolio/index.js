@@ -12,6 +12,7 @@ import pokedexImg from '../../assets/images/pokedex.png'
 import jobboardhuntImg from '../../assets/images/jobboardhunt.png'
 import jobboardImg from '../../assets/images/job-board.png'
 import colorPalleteImg from '../../assets/images/color-pallete.png'
+import aiYoutubeImg from '../../assets/images/ai_youtube_summarizer.png'
 import './index.scss'
 
 const Portfolio = () => {
@@ -38,6 +39,27 @@ const Portfolio = () => {
           />
         </h1>
         <div className="images-container">
+          <div className="image-box">
+            <img
+              src={aiYoutubeImg}
+              className="portfolio-image"
+              alt="portfolio"
+            />
+            <div className="content">
+              <p className="title">AI Youtube Summarizer</p>
+              <h4 className="description">
+                AI Youtube Video Summarizer using React, Flask and OpenAI API
+              </h4>
+              <button
+                className="btn"
+                onClick={() =>
+                  window.open('https://www.github.com/xmyoot/ai-yt-sum')
+                }
+              >
+                View
+              </button>
+            </div>
+          </div>
           <div className="image-box">
             <img
               src={colorPalleteImg}
