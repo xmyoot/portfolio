@@ -10,25 +10,25 @@ const Home = () => {
 
   const nameArray = ['e', 'c', 't', 'o', 'r']
   const jobArray = [
-    'S',
-    'o',
-    'f',
-    't',
-    'w',
-    'a',
-    'r',
-    'e',
-    ' ',
-    'D',
-    'e',
-    'v',
-    'e',
+    'E',
     'l',
-    'o',
-    'p',
+    'e',
+    'c',
+    't',
+    'r',
+    'i',
+    'c',
+    'a',
+    'l',
+    ' ',
+    'E',
+    'n',
+    'g',
+    'i',
+    'n',
+    'e',
     'e',
     'r',
-    '.',
   ]
 
   useEffect(() => {
@@ -45,10 +45,7 @@ const Home = () => {
           <br />
           <span className={`${letterClass} _13`}>I</span>
           <span className={`${letterClass} _14`}>'m</span>
-          <img
-            src={logo}
-            alt="JavaScript Developer Name, Software Developer Name"
-          />
+          <img src={logo} alt="Electrical Engineer" />
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
@@ -61,7 +58,10 @@ const Home = () => {
             idx={17}
           />
         </h1>
-        <h2>Frontend Developer / React Expert</h2>
+        <h2>
+          Passionate about hardware engineering, open-source software, and
+          robotics
+        </h2>
         <Link to="/portfolio" className="flat-button portfolio-button">
           PORTFOLIO
         </Link>

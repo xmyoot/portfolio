@@ -1,18 +1,23 @@
 // Colors
-$primary-color: #4d2710;
-$secondary-color: #477e54;
-$color-navbar: #4d2710;
-$color-navbar-links: #af8900;
+// $primary-color: #4d2710;
+// $secondary-color: #477e54;
+// $color-navbar: #4d2710;
+// $color-navbar-links: #af8900;
+// Enhanced Circuit Board Inspired Color Scheme with More Golds and Silvers
+$primary-color: #0b3d20; // Deep green, resembling the color of circuit boards
+$secondary-color: #1a5e35; // Medium green, adding a bit of variation
+$color-navbar: #2a7f4f; // Brighter green for highlights
+$color-navbar-links: #d4af37; // Rich gold for links, resembling high-quality solder points
 
-$color-success: #28a745;
-$color-danger: #dc3545;
-$color-warning: #ffc107;
-$color-info: #17a2b8;
-$color-light: #f8f9fa;
-$color-darkgray: #010101;
-$color-dark: #181818;
+$color-success: #4caf50; // Vibrant green for success messages
+$color-danger: #f44336; // Red for errors, standing out against the green
+$color-warning: #ffeb3b; // Bright yellow for warnings, like caution signs on hardware
+$color-info: #2196f3; // Blue for informational messages, adding a cool tone
+$color-light: #e5e4e2; // Silver, resembling the color of solder mask and enhancing readability
+$color-darkgray: #343a40; // Dark grey, for text and less emphasized elements
+$color-dark: #212529; // Almost black, providing depth and contrast
 
-$color-nodejs: #83ba63;
+$color-nodejs: #68a063; // Node.js green, fitting into the overall theme
 
-$color-darkblue: #343148;
-$color-darktan: #d7c49e;
+$color-darkblue: #004d40; // Dark teal, adding a touch of sophistication
+$color-darktan: #d2b48c; // Tan, resembling the color of older PCBs

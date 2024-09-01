@@ -35,13 +35,17 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established software company with the opportunity to work with the
-            latest technologies on challenging and diverse projects.
+            I'm a highly motivated electrical engineer seeking a position in a
+            dynamic organization where I can apply my expertise in robotics,
+            power electronics, analog electronics, and RF systems. I am eager to
+            contribute to innovative projects that push the boundaries of
+            technology.
           </p>
           <p>
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            I am deeply passionate about engineering challenges, constantly
+            seeking to expand my knowledge in hardware design and system
+            integration. My goal is to develop cutting-edge solutions that
+            advance the field of electronics and robotics.
           </p>
         </div>
         <div className="stage-cube-cont">
