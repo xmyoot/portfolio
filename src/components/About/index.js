@@ -49,7 +49,11 @@ const About = () => {
             advance the field of electronics and robotics.
           </p>
 
-          <a href={ResumePDF} className="flat-button" download="Resume_EE.pdf">
+          <a
+            href={ResumePDF}
+            className="flat-button resume-button"
+            download="Resume_EE.pdf"
+          >
             Resume
           </a>
           <a
