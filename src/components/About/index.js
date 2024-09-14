@@ -1,5 +1,6 @@
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
+import ResumePDF from '../../assets/Resume_EE.pdf'
 import {
   faNode,
   faCss3,
@@ -47,6 +48,18 @@ const About = () => {
             integration. My goal is to develop cutting-edge solutions that
             advance the field of electronics and robotics.
           </p>
+
+          <a href={ResumePDF} className="flat-button" download="Resume_EE.pdf">
+            Resume
+          </a>
+          <a
+            href="https://www.linkedin.com/in/hectorjimenezz"
+            className="flat-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">

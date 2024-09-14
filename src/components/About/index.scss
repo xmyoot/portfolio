@@ -107,3 +107,27 @@
     transform: rotateX(90deg);
   }
 }
+.flat-button {
+  color: $color-light;
+  background-color: $primary-color;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 12px 20px;
+  border: 1px solid $primary-color;
+  margin-top: 25px;
+  float: left;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+  transition: all 0.3s ease; // Add transition for smoother hover effect
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); // Add box-shadow for 3D look
+
+  &:hover {
+    background-color: transparent;
+    color: $primary-color;
+    transform: translateY(-3px); // Lift the button a bit on hover
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); // Increase box-shadow on hover
+  }
+}
